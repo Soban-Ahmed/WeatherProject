@@ -12,7 +12,7 @@ app.get("/", function(request, response ){ //get means - when requesting to open
 app.post("/", function(req, res ){ //post used.. this should happen when submit clicked.. we are grabbing the post request - when requesting to open this page. 
 
     const location = req.body.nameInput; // you are getting the data from the request param
-    const apiKey = "589be49713933fc2da74ed8ce91f4a56";
+    const apiKey = "";
     const url = "https://api.openweathermap.org/data/2.5/weather?q=" + location + "&appid=" + apiKey; // api url
 
     https.get(url, function (resp) { // making an api call
